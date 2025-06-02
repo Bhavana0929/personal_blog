@@ -1,0 +1,5 @@
+"homepage": "https://bhavana0929.github.io/personal_blog"
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
