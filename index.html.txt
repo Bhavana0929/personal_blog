@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bhavana Marreddy - Personal Blog</title>
+  <style>
+    /* Reset & basics */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #222;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      background: #fafafa;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      z-index: 1000;
+    }
+    nav {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      gap: 25px;
+    }
+    nav a {
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 6px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #e6f0ff;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 80px auto 40px; /* leave space for fixed header */
+      padding: 0 15px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #1a73e8;
+      border-bottom: 3px solid #1a73e8;
+      padding-bottom: 6px;
+    }
+
+    /* About Section */
+    #about p {
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    /* Resume Section */
+    #resume h3 {
+      border-bottom: 2px solid #1a73e8;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    #resume ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #444;
+      columns: 2;
+      column-gap: 40px;
+      margin-bottom: 30px;
+    }
+    #resume ul li {
+      margin-bottom: 0.5rem;
+    }
+    #resume strong {
+      color: #1a73e8;
+    }
+    #resume h4 {
+      color: #1a73e8;
+      margin-bottom: 5px;
+    }
+    #resume p.job-title {
+      font-style: italic;
+      color: #666;
+      margin: 0;
+    }
+    #resume ul.job-details {
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #444;
+      margin-top: 8px;
+      line-height: 1.5;
+      columns: 1;
+    }
+
+    /* Blog Section */
+    #blog article {
+      background: #fff;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+      margin-bottom: 20px;
+      transition: box-shadow 0.3s ease;
+    }
+    #blog article:hover {
+      box-shadow: 0 4px 12px rgb(0 0 0 / 0.15);
+    }
+    #blog h3 {
+      margin-top: 0;
+      color: #1a73e8;
+    }
+    #blog p {
+      color: #444;
+    }
+
+    /* Contact Section */
+    #contact form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    #contact label {
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #333;
+    }
+    #contact input, #contact textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+    #contact button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    #contact button:hover {
+      background-color: #155ab6;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      #resume ul {
+        columns: 1;
+      }
+      nav {
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#resume">Resume</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m Bhavana Marreddy, a passionate Generative AI Engineer with 6 years of experience building scalable AI solutions and software. I enjoy designing innovative systems, collaborating with teams, and driving impactful AI projects.</p>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+
+    <h3>Summary</h3>
+    <p>Highly adaptable and motivated software developer with 6 years of experience in Artificial Intelligence and Software Engineering. Increased project success by designing and delivering innovative solutions to meet evolving business requirements. Proficient in programming languages and multiple frameworks and skilled in developing performant and scalable AI solutions. Excellent communication and interpersonal skills, with a proven track record of effectively collaborating with teams to overcome technical challenges.</p>
+
+    <h3>Areas of Expertise</h3>
+    <ul>
+      <li>Natural Language Processing</li>
+      <li>Machine Learning</li>
+      <li>Deep Learning</li>
+      <li>Artificial Intelligence</li>
+      <li>Computer Vision</li>
+      <li>Debugging & Analysis</li>
+      <li>Retrieval Augmented Generation</li>
+      <li>Generative AI</li>
+      <li>Backend Development</li>
+    </ul>
+
+    <h3>Technical Proficiencies</h3>
+    <p><strong>Programming Languages:</strong> Python, C, Java<br />
+      <strong>Frameworks & Tools:</strong> Python Pandas, NumPy, Matplotlib, Scikit-learn, TensorFlow, LangChain, Hugging Face Transformers, Databricks, Anaconda, Streamlit, Jupyter, VS Code, IntelliJ, AWS Bedrock, LangGraph, Amazon OpenSearch, FAISS, AWS SageMaker, OpenAI APIs, wandb
+    </p>
+
+    <h3>Academic Highlights</h3>
+    <p><strong>SIR CR REDDY College of Engineering, India</strong><br />
+      B Tech in Electronics & Communication Engineering | Gold Medal (9.3/10.0)<br />
+      Jun 2016 – Jul 2020
+    </p>
+
+    <h3>Professional Experience</h3>
+    <div>
+      <h4>Amazon, Dallas, USA</h4>
+      <p class="job-title">SDE I, AI &nbsp;&nbsp;|&nbsp;&nbsp; Dec 2022 – May 2025</p>
+      <ul class="job-details">
+        <li>Contributed to the development of internal Q&A systems NLP capabilities, working on text embedding and classification pipelines to improve understanding of user queries and internal documentation.</li>
+        <li>Supported integration of large language models with vector-based retrieval systems, enabling more accurate and context-aware answer generation for internal knowledge base queries.</li>
+        <li>Assisted in the design and evaluation of prompt strategies tailored to different enterprise use cases, collaborating with senior ML engineers to improve output relevance and reduce hallucinations.</li>
+        <li>Achieved a 22% improvement in top-3 answer accuracy and reduced latency by 15% through model fine-tuning, prompt engineering iterations, and retrieval optimization — tracked using automated evaluation frameworks and A/B testing.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Tata Consultancy Services, Hyderabad, TS, India</h4>
+      <p class="job-title">Software Developer &nbsp;&nbsp;|&nbsp;&nbsp; Nov 2020 – Sep 2022</p>
+      <ul class="job-details">
+        <li>Created and maintained software solutions to ensure smooth operation and management of software and hardware components on network nodes, ensuring high system uptime and reliability.</li>
+        <li>Implemented robust monitoring systems to track the health and performance of nodes, providing real-time alerts for any issues related to system health, power, or connectivity.</li>
+        <li>Designed and implemented an automated software upgrade application for network nodes, which streamlined the entire upgrade process. This flow ensured a smooth and reliable upgrade for nodes across the network.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Agentz, Chennai, India</h4>
+      <p class="job-title">Research Engineer Intern, AI &nbsp;&nbsp;|&nbsp;&nbsp; Aug 2019 – Nov 2020</p>
+      <ul class="job-details">
+        <li>Conducted extensive research and pioneered the development of advanced NLP models focused on text classification and question answering, utilizing cutting-edge techniques such as tokenization, foundation models, and transfer learning.</li>
+        <li>Demonstrated proficiency in Python, TensorFlow, and distributed computing, effectively training models on GPU clusters for enhanced efficiency.</li>
+        <li>Leveraged CNNs, LSTMs, and Transformers to analyze user reviews, resulting in valuable insights and actionable recommendations.</li>
+      </ul>
+    </div>
+
+    <h3>Signature Projects</h3>
+    <ul>
+      <li><strong>Neural Networks from Scratch (using NumPy)</strong> | Implemented DNN, CNN, RNN and LSTM from scratch using NumPy, gaining a profound understanding of the mathematical operations behind each layer. Achieved 96.4% accuracy in handwritten digit recognition using a custom-built CNN.</li>
+      <li><strong>Detectron2 Object Detection Model (for amenity detection)</strong
